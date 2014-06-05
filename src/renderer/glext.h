@@ -2406,18 +2406,6 @@ extern "C" {
 #define GL_BIAS_BIT_ATI                   0x00000008
 #endif
 
-#ifndef GL_ATI_pn_triangles
-#define GL_PN_TRIANGLES_ATI               0x87F0
-#define GL_MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI 0x87F1
-#define GL_PN_TRIANGLES_POINT_MODE_ATI    0x87F2
-#define GL_PN_TRIANGLES_NORMAL_MODE_ATI   0x87F3
-#define GL_PN_TRIANGLES_TESSELATION_LEVEL_ATI 0x87F4
-#define GL_PN_TRIANGLES_POINT_MODE_LINEAR_ATI 0x87F5
-#define GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATI 0x87F6
-#define GL_PN_TRIANGLES_NORMAL_MODE_LINEAR_ATI 0x87F7
-#define GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATI 0x87F8
-#endif
-
 #ifndef GL_ATI_vertex_array_object
 #define GL_STATIC_ATI                     0x8760
 #define GL_DYNAMIC_ATI                    0x8761
@@ -5319,15 +5307,6 @@ typedef void ( APIENTRYP PFNGLALPHAFRAGMENTOP3ATIPROC )( GLenum op, GLuint dst, 
 typedef void ( APIENTRYP PFNGLSETFRAGMENTSHADERCONSTANTATIPROC )( GLuint dst, const GLfloat *value );
 #endif
 
-#ifndef GL_ATI_pn_triangles
-#define GL_ATI_pn_triangles 1
-#ifdef GL_GLEXT_PROTOTYPES
-GLAPI void APIENTRY glPNTrianglesiATI( GLenum, GLint );
-GLAPI void APIENTRY glPNTrianglesfATI( GLenum, GLfloat );
-#endif /* GL_GLEXT_PROTOTYPES */
-typedef void ( APIENTRYP PFNGLPNTRIANGLESIATIPROC )( GLenum pname, GLint param );
-typedef void ( APIENTRYP PFNGLPNTRIANGLESFATIPROC )( GLenum pname, GLfloat param );
-#endif
 
 #ifndef GL_ATI_vertex_array_object
 #define GL_ATI_vertex_array_object 1
