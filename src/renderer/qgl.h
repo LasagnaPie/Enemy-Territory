@@ -147,23 +147,6 @@ typedef void ( APIENTRY * PFNGLCLIENTACTIVETEXTUREARBPROC )( GLenum target );
 ** extension constants
 */
 
-// GL_ATI_pn_triangles
-#ifndef GL_ATI_pn_triangles
-#define GL_ATI_pn_triangles 1
-
-#define GL_PN_TRIANGLES_ATI                         0x6090
-#define GL_MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI   0x6091
-#define GL_PN_TRIANGLES_POINT_MODE_ATI              0x6092
-#define GL_PN_TRIANGLES_NORMAL_MODE_ATI             0x6093
-#define GL_PN_TRIANGLES_TESSELATION_LEVEL_ATI       0x6094
-#define GL_PN_TRIANGLES_POINT_MODE_LINEAR_ATI       0x6095
-#define GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATI        0x6096
-#define GL_PN_TRIANGLES_NORMAL_MODE_LINEAR_ATI      0x6097
-#define GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATI   0x6098
-
-typedef void ( APIENTRY * PFNGLPNTRIANGLESIATIPROC )( GLenum pname, GLint param );
-typedef void ( APIENTRY * PFNGLPNTRIANGLESFATIPROC )( GLenum pname, GLfloat param );
-#endif
 
 // for NV fog distance
 #ifndef GL_NV_fog_distance
@@ -204,10 +187,6 @@ extern void ( APIENTRY * qglClientActiveTextureARB )( GLenum texture );
 extern void ( APIENTRY * qglLockArraysEXT )( GLint, GLint );
 extern void ( APIENTRY * qglUnlockArraysEXT )( void );
 
-//----(SA)	added
-extern void ( APIENTRY * qglPNTrianglesiATI )( GLenum pname, GLint param );
-extern void ( APIENTRY * qglPNTrianglesfATI )( GLenum pname, GLfloat param );
-//----(SA)	end
 
 //===========================================================================
 
