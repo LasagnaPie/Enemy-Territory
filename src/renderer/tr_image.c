@@ -2147,12 +2147,13 @@ image_t *R_FindImageFile( const char *name, qboolean mipmap, qboolean allowPicmi
 #define CHECKPOWEROF2
 //#endif // _DEBUG
 
-#ifdef CHECKPOWEROF2
+/*#ifdef CHECKPOWEROF2
 	if ( ( ( width - 1 ) & width ) || ( ( height - 1 ) & height ) ) {
 		Com_Printf( "^1Image not power of 2 scaled: %s\n", name );
 		return NULL;
 	}
 #endif // CHECKPOWEROF2
+/**/
 
 	image = R_CreateImage( ( char * ) name, pic, width, height, mipmap, allowPicmip, glWrapClampMode );
 
